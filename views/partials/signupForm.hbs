@@ -1,0 +1,24 @@
+{{!-- issue --}}
+{{#if userExist}}
+<div class = "card-panel red">User Already Exists</div>
+{{else}} {{#if userDoesNotExist}}
+<div class = "card-panel green"<>User Created!</div>
+{{/if}}{{/if}}
+
+{{!-- <form action="/signup" method="POST">
+    <input type ="email" name="username" id="username" placeholder="Enter Email">
+    <input type ="password" name="password" id = "password"placeholder="Enter Password">
+    <input type ="password" name="confirmPassword" id = "confirmPassword" placeholder="Confirm Password">
+    <input type ="submit" value="Sign Up" id = "signUpSubmit" class="btn waves-effect waves-light">  --}}
+{{!-- </form>  --}}
+
+<form action ="/signup" method = "POST">
+        <p> Username </p>
+        <input type ="text" name="username" placeholder= "Enter Username">
+        <p> Password </p>
+        <input type = "password" name = "password" placeholder = "Enter Password">
+        <p> Confirm Password</p>
+        <input type = "password" name = "" placeholder = "Confirm Password">
+        <input type ="submit"   id="signUpSubmit" value ="Submit">
+        <a href = "/login"> Already have a account? </a>
+    </form>
